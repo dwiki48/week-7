@@ -1,5 +1,5 @@
-<div class ="container">
-  <div class = "row">
+<div class="container">
+  <div class="row">
     <div class="col-md-12">
       <h1>Form Pegawai</h1>
       <hr>
@@ -12,14 +12,15 @@
       <label form="nama">Jenis Kelamin</label>
       <input type="text" class="form-control" [(ngModel)]="jk">
       <br>
-      <button class ="btn btn-primary" (click)="tambahpegawai()">Tambah</button>
+      <button class="btn btn-primary" (click)="tambahpegawai()">Tambah</button>
     </div>
   </div>
-  <div class="row" *ngFor = "let Pegawai of daftarPegawai">
+  <div class="row" *ngFor="let Pegawai of daftarPegawai">
     <div class="col-md-12"></div>
     <h2>{{ pegawai.nama }}</h2>
     <h3>{{ pegawai.nip }}</h3>
     <p>{{ pegawai.alamat }}</p>
+    <p>{{ pegawai.jk }}</p>
     <p>{{ pegawai.jk }}</p>
   </div>
 </div>
